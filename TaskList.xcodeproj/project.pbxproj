@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		32C5ACC126446E1E0020D37C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACC026446E1E0020D37C /* AppDelegate.swift */; };
-		32C5ACC326446E1E0020D37C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACC226446E1E0020D37C /* SceneDelegate.swift */; };
 		32C5ACC526446E1E0020D37C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACC426446E1E0020D37C /* TableViewController.swift */; };
-		32C5ACCB26446E1E0020D37C /* TrackList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACC926446E1E0020D37C /* TrackList.xcdatamodeld */; };
+		32C5ACCB26446E1E0020D37C /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACC926446E1E0020D37C /* TaskList.xcdatamodeld */; };
 		32C5ACCD26446E210020D37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C5ACCC26446E210020D37C /* Assets.xcassets */; };
 		32C5ACD026446E210020D37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C5ACCE26446E210020D37C /* LaunchScreen.storyboard */; };
+		32C5ACE8264573310020D37C /* Storagemanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACE7264573310020D37C /* Storagemanager.swift */; };
+		32C5ACF0264586120020D37C /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5ACEF264586120020D37C /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32C5ACBD26446E1E0020D37C /* TrackList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C5ACBD26446E1E0020D37C /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C5ACC026446E1E0020D37C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32C5ACC226446E1E0020D37C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32C5ACC426446E1E0020D37C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		32C5ACCA26446E1E0020D37C /* TrackList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackList.xcdatamodel; sourceTree = "<group>"; };
 		32C5ACCC26446E210020D37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C5ACCF26446E210020D37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C5ACD126446E210020D37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C5ACE7264573310020D37C /* Storagemanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storagemanager.swift; sourceTree = "<group>"; };
+		32C5ACEF264586120020D37C /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		32C5ACB426446E1E0020D37C = {
 			isa = PBXGroup;
 			children = (
-				32C5ACBF26446E1E0020D37C /* TrackList */,
+				32C5ACBF26446E1E0020D37C /* TaskList */,
 				32C5ACBE26446E1E0020D37C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +50,32 @@
 		32C5ACBE26446E1E0020D37C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32C5ACBD26446E1E0020D37C /* TrackList.app */,
+				32C5ACBD26446E1E0020D37C /* TaskList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32C5ACBF26446E1E0020D37C /* TrackList */ = {
+		32C5ACBF26446E1E0020D37C /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				32C5ACC026446E1E0020D37C /* AppDelegate.swift */,
-				32C5ACC226446E1E0020D37C /* SceneDelegate.swift */,
 				32C5ACC426446E1E0020D37C /* TableViewController.swift */,
+				32C5ACEF264586120020D37C /* AlertController.swift */,
+				32C5ACE7264573310020D37C /* Storagemanager.swift */,
+				32C5ACC026446E1E0020D37C /* AppDelegate.swift */,
 				32C5ACCC26446E210020D37C /* Assets.xcassets */,
 				32C5ACCE26446E210020D37C /* LaunchScreen.storyboard */,
 				32C5ACD126446E210020D37C /* Info.plist */,
-				32C5ACC926446E1E0020D37C /* TrackList.xcdatamodeld */,
+				32C5ACC926446E1E0020D37C /* TaskList.xcdatamodeld */,
 			);
-			path = TrackList;
+			path = TaskList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32C5ACBC26446E1E0020D37C /* TrackList */ = {
+		32C5ACBC26446E1E0020D37C /* TaskList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32C5ACD426446E210020D37C /* Build configuration list for PBXNativeTarget "TrackList" */;
+			buildConfigurationList = 32C5ACD426446E210020D37C /* Build configuration list for PBXNativeTarget "TaskList" */;
 			buildPhases = (
 				32C5ACB926446E1E0020D37C /* Sources */,
 				32C5ACBA26446E1E0020D37C /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = TrackList;
+			name = TaskList;
 			productName = TrackList;
-			productReference = 32C5ACBD26446E1E0020D37C /* TrackList.app */;
+			productReference = 32C5ACBD26446E1E0020D37C /* TaskList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 32C5ACB826446E1E0020D37C /* Build configuration list for PBXProject "TrackList" */;
+			buildConfigurationList = 32C5ACB826446E1E0020D37C /* Build configuration list for PBXProject "TaskList" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32C5ACBC26446E1E0020D37C /* TrackList */,
+				32C5ACBC26446E1E0020D37C /* TaskList */,
 			);
 		};
 /* End PBXProject section */
@@ -137,9 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C5ACC526446E1E0020D37C /* TableViewController.swift in Sources */,
+				32C5ACF0264586120020D37C /* AlertController.swift in Sources */,
 				32C5ACC126446E1E0020D37C /* AppDelegate.swift in Sources */,
-				32C5ACC326446E1E0020D37C /* SceneDelegate.swift in Sources */,
-				32C5ACCB26446E1E0020D37C /* TrackList.xcdatamodeld in Sources */,
+				32C5ACCB26446E1E0020D37C /* TaskList.xcdatamodeld in Sources */,
+				32C5ACE8264573310020D37C /* Storagemanager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +284,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q56H3JNA98;
-				INFOPLIST_FILE = TrackList/Info.plist;
+				INFOPLIST_FILE = TaskList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q56H3JNA98;
-				INFOPLIST_FILE = TrackList/Info.plist;
+				INFOPLIST_FILE = TaskList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32C5ACB826446E1E0020D37C /* Build configuration list for PBXProject "TrackList" */ = {
+		32C5ACB826446E1E0020D37C /* Build configuration list for PBXProject "TaskList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32C5ACD226446E210020D37C /* Debug */,
@@ -323,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32C5ACD426446E210020D37C /* Build configuration list for PBXNativeTarget "TrackList" */ = {
+		32C5ACD426446E210020D37C /* Build configuration list for PBXNativeTarget "TaskList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32C5ACD526446E210020D37C /* Debug */,
@@ -335,13 +339,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		32C5ACC926446E1E0020D37C /* TrackList.xcdatamodeld */ = {
+		32C5ACC926446E1E0020D37C /* TaskList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				32C5ACCA26446E1E0020D37C /* TrackList.xcdatamodel */,
 			);
 			currentVersion = 32C5ACCA26446E1E0020D37C /* TrackList.xcdatamodel */;
-			path = TrackList.xcdatamodeld;
+			path = TaskList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
